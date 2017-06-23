@@ -156,8 +156,8 @@ def processfile():
 
 
 def processImage(image_filenames,d,i):
-        api_key = 'AIzaSyCrOfaHEfR1yN7G5DTlGg4OsBgI_6viz-sRJ'
-        #api_key = '1234'
+        #api_key = 'AIzaSyCrOfaHEfR1yN7G5DTlGg4OsBgI_6viz-sRJ'
+        api_key = '1234'
         response = request_ocr(api_key, image_filenames)
         if response.status_code != 200 or response.json().get('error'):
             print(response.text)
