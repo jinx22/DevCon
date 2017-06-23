@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+            		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $("input[type='submit']").click(function(){
+        var $fileUpload = $("input[type='file']");
+        if (parseInt($fileUpload.get(0).files.length)>10){
+         alert("You can only upload a maximum of 10 files");
+         return false;
+        }
+    });
+});
+</script>
+      <style>
+        input[type=file], input[type=submit], button[type=submit] {
+    background-color: #99E1D9;
+    border: 2px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+      </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+  <body style="background-color:#F0F7F4">
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted" style="color:#70ABAF">Magic Reimbersment</h3>
+        <h2 class="text-muted" style="color:#32292F">Reimbersment Made Easy</h2>
+      </div>
+      <hr/>
+
+        <div>
+
+            {% if filenames %}
+              <div>
+                  <h5>You can add some more files by choosing</h5>
+              </div>
+              {% endif %}
+          <form action="upload" method="post" enctype="multipart/form-data">
+          <input type="file" name="file[]" multiple=""class="span3"><br /><br />
+              <h5>after choosing click here to upload  into the system.</h5>
+              <h5>choose as batches of 10 files. repeate it for all your files</h5>
+              <h5>You can process all of them at once </h5>
+          <input type="submit" value="Upload">
+
+          </form>
+        </div>
+        <br><br>
+        <form action="/process" method="post">
+                          <h5>Once you upload all your files please click bellow</h5>
+            <button type="submit" name="Process" value="Process">Process</button>
+        </form>
+
+
+     {% if filenames %}
+            <div>
+            This is a list of the files you just uploaded
+            <ul>
+            {% for file in filenames %}
+                <li>{{file}}</a></li>
+            {% endfor %}
+            </ul>
+            </div>
+        {% endif %}
+
+      {%if processed %}
+      <div>
+        <h1> All Uploaded files have been processed </h1>
+      </div>
+        <div class="container" align="left">
+		<a href="/return-files/" target="blank"><button class='btn btn-default'>Download!</button></a>
+        </div>
+        {% endif %}
+
+              {%if error %}
+      <div>
+        <h1> Oops something went Wrong Try again </h1>
+      </div>
+        {% endif %}
+    </div>
+  </body>
+</html>
