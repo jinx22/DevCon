@@ -16,28 +16,26 @@ These instructions will get you a copy of the project up and running on your loc
 
 Prerequisites
 -------------------------------------------------------------
-    the final product can be used by any lay-man but 
-    for development purpose you need to have knowlege about
-    python, html, css and google cloud vision api
+the final product can be used by any lay-man but for development purpose you need to have knowlege about python, html, css and google cloud vision api
 
 Installing
 ---------------------------------------------------------------
-    Python 3.5 (backend of the project is in python) - [https://www.python.org/](https://www.python.org/)
+[Python 3.5 (backend of the project is in python)](https://www.python.org/)
         packages:
             pdfminer, werkzeug.utils, flask, collections, json,  os,  datefinder, re, xlsxwriter, glob2, time, shutil, requests, ntpath, io
             
-    PyCharm (or any oter Python IDE) - [https://www.jetbrains.com/pycharm/]
+[PyCharm (or any oter Python IDE)](https://www.jetbrains.com/pycharm/)
     
-    Google Cloud Vision API Key (to convert image to text) - [https://cloud.google.com/vision/]
+[Google Cloud Vision API Key (to convert image to text](https://cloud.google.com/vision/])
 
 Testing
 ----------------------------------------------------------------
-    1. run the file cloudvisreq.py in pycharm. It will redirect you to a server
-    2. click on the server link
-    3. click on Choose Files and select all the bills
-    4. click on upload (you can select more files again)
-    5. click on process
-    6. once the files are being processed, you will get a download link which contains a zip file
+1. run the file cloudvisreq.py in pycharm. It will redirect you to a server
+2. click on the server link
+3. click on Choose Files and select all the bills
+4. click on upload (you can select more files again)
+5. click on process
+6. once the files are being processed, you will get a download link which contains a zip file
 
  Version
 --------------------------------------------------------------------
