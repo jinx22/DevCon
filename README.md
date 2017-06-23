@@ -30,12 +30,13 @@ Installing
 
 Testing
 ----------------------------------------------------------------
-1. run the file cloudvisreq.py in pycharm. It will redirect you to a server
-2. click on the server link
-3. click on Choose Files and select all the bills
-4. click on upload (you can select more files again)
-5. click on process
-6. once the files are being processed, you will get a download link which contains a zip file
+1. open cloudvisreq.py in pycharm an put your own api key in the field api_key
+2. run the above file. it will display a server link
+3. click on the server link
+4. click on Choose Files and select all the bills
+5. click on upload (you can select more files again)
+6. click on process
+7. once the files are being processed, you will get a download link which contains a zip file
 
  Version
 --------------------------------------------------------------------
