@@ -16,11 +16,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 Prerequisites
 -------------------------------------------------------------
-    the final product can be used by any lay-man but for development purpose you need to have knowlege about python, html, css and google cloud vision api
+    the final product can be used by any lay-man but 
+    for development purpose you need to have knowlege about
+    python, html, css and google cloud vision api
 
 Installing
 ---------------------------------------------------------------
-    Python 3.5 (backend of the project is in python) - [https://www.python.org/]
+    Python 3.5 (backend of the project is in python) - (https://www.python.org/)[https://www.python.org/]
         packages:
             pdfminer, werkzeug.utils, flask, collections, json,  os,  datefinder, re, xlsxwriter, glob2, time, shutil, requests, ntpath, io
             
