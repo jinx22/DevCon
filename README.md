@@ -10,16 +10,16 @@ Hence we have automated this process for the ease of an organization. Now all yo
 Login to the web app, upload all the bills, click on process, download the zip file and voila!!!
 Now you can extract the contents of the zip and submit the excel to your organiation.
 
- Getting Started
+Getting Started
 -----------------------------------------------------------------
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
- Prerequisites
-    -------------------------------------------------------------
+Prerequisites
+-------------------------------------------------------------
     the final product can be used by any lay-man but for development purpose you need to have knowlege about python, html, css and google cloud vision api
 
- Installing
-    ---------------------------------------------------------------
+Installing
+---------------------------------------------------------------
     Python 3.5 (backend of the project is in python) -https://www.python.org/
         packages:
             pdfminer, werkzeug.utils, flask, collections, json,  os,  datefinder, re, xlsxwriter, glob2, time, shutil, requests, ntpath, io
@@ -28,8 +28,8 @@ These instructions will get you a copy of the project up and running on your loc
     
     Google Cloud Vision API Key (to convert image to text) -https://cloud.google.com/vision/
 
- ##Testing
-    ----------------------------------------------------------------
+Testing
+----------------------------------------------------------------
     1. run the file cloudvisreq.py in pycharm. It will redirect you to a server
     2. click on the server link
     3. click on Choose Files and select all the bills
