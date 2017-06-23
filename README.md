@@ -20,13 +20,13 @@ Prerequisites
 
 Installing
 ---------------------------------------------------------------
-    Python 3.5 (backend of the project is in python) -https://www.python.org/
+    Python 3.5 (backend of the project is in python) - [https://www.python.org/]
         packages:
             pdfminer, werkzeug.utils, flask, collections, json,  os,  datefinder, re, xlsxwriter, glob2, time, shutil, requests, ntpath, io
             
-    PyCharm (or any oter Python IDE) - https://www.jetbrains.com/pycharm/
+    PyCharm (or any oter Python IDE) - [https://www.jetbrains.com/pycharm/]
     
-    Google Cloud Vision API Key (to convert image to text) -https://cloud.google.com/vision/
+    Google Cloud Vision API Key (to convert image to text) - [https://cloud.google.com/vision/]
 
 Testing
 ----------------------------------------------------------------
@@ -44,6 +44,7 @@ Automation of Bills/Expense Report 1.0
  Authors
 --------------------------------------------------------------------
 Renisha Fernandes (RF048808)
+
 Jeeri Deka (JD050692)
 
 
