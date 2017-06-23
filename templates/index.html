@@ -14,34 +14,56 @@
 });
 </script>
       <style>
-        input[type=file], input[type=submit], button[type=submit] {
-    background-color: #99E1D9;
+        input[type=file], input[type=submit], button[type=submit], button[type=button]{
+    background-color: #6E7783;
     border: 2px;
     color: white;
-    padding: 16px 32px;
+    padding: 10px 20px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+#left {
+    background-color: #ABD0CE;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: 25px;
+    width: 50%;
+}
+#right {
+    background-color: #ABD0CE;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: 25px;
+    width: 50%;
+}
+#full {
+    background-color: #ABD0CE;
 }
       </style>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
           rel="stylesheet">
   </head>
-  <body style="background-color:#F0F7F4">
-    <div class="container">
+  <body style="
+  background-color:#D8E6E7">
+
       <div class="header">
-        <h3 class="text-muted" style="color:#70ABAF">Magic Reimbersment</h3>
-        <h2 class="text-muted" style="color:#32292F">Reimbersment Made Easy</h2>
+        <h3 class="text-muted" style="color:#70ABAF" align="center">Magic Reimbursement</h3>
+        <h2 class="text-muted" style="color:#32292F"align="center">Reimbursement Made Easy</h2>
       </div>
       <hr/>
+    <div class="container" id="full">
 
+
+            <span id="left" width="50%">
+                <div>
         <div>
-
-            {% if filenames %}
-              <div>
-                  <h5>You can add some more files by choosing</h5>
-              </div>
-              {% endif %}
           <form action="upload" method="post" enctype="multipart/form-data">
           <input type="file" name="file[]" multiple=""class="span3"><br /><br />
               <h5>after choosing click here to upload  into the system.</h5>
@@ -58,6 +80,10 @@
         </form>
 
 
+    </div>
+        </span>
+        <span id="right" width="50%">
+         <div>
      {% if filenames %}
             <div>
             This is a list of the files you just uploaded
@@ -74,7 +100,7 @@
         <h1> All Uploaded files have been processed </h1>
       </div>
         <div class="container" align="left">
-		<a href="/return-files/" target="blank"><button class='btn btn-default'>Download!</button></a>
+		<a href="/return-files/" target="blank"><button class='btn btn-default' type="button">Download Processed File!!!</button></a>
         </div>
         {% endif %}
 
@@ -84,5 +110,10 @@
       </div>
         {% endif %}
     </div>
+
+</span>
+
+
+        </div>
   </body>
 </html>
