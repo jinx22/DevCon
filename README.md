@@ -12,11 +12,11 @@ Getting Started
 -----------------------------------------------------------------
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-    Prerequisites
+ Prerequisites
     -------------------------------------------------------------
     the final product can be used by any lay-man but for development purpose you need to have knowlege about python, html, css and google cloud vision api
 
-    Installing
+ Installing
     ---------------------------------------------------------------
     Python 3.5 (backend of the project is in python) -https://www.python.org/
         packages:
@@ -24,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
     PyCharm (or any oter Python IDE) - https://www.jetbrains.com/pycharm/
     Google Cloud Vision API Key (to convert image to text) -https://cloud.google.com/vision/
 
-    Testing
+ Testing
     ----------------------------------------------------------------
     1. run the file cloudvisreq.py in pycharm. It will redirect you to a server
     2. click on the server link
