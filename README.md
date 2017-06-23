@@ -22,7 +22,7 @@ Prerequisites
 
 Installing
 ---------------------------------------------------------------
-    Python 3.5 (backend of the project is in python) - (https://www.python.org/)[https://www.python.org/]
+    Python 3.5 (backend of the project is in python) - [https://www.python.org/](https://www.python.org/)
         packages:
             pdfminer, werkzeug.utils, flask, collections, json,  os,  datefinder, re, xlsxwriter, glob2, time, shutil, requests, ntpath, io
             
